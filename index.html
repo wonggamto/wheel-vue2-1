@@ -6,30 +6,44 @@
     <style>
         /*        全局样式*/
         * {margin: 0;padding: 0;box-sizing: border-box}
+
         /*  css 变量 */
         html {
             --button-height: 32px;
             --font-size: 14px;
-            --button-bg:white;
-            --button-active-bg:#eee;
-            --border-radius:4px;
-            --color:#333;
-            --border-color:#999;
-            --border-color-hover:#666;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
         }
-        #app{
+
+        #app {
             margin: 20px;
         }
-        body{
+
+        body {
             font-size: var(--font-size);
+        }
+
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
         }
     </style>
 
 </head>
 <body>
 <script type="module" src="./src/app.js"></script>
+
 <div id="app">
-    <g-button></g-button>
+    <g-button icon="setting" >按钮</g-button>
+    <g-button>按钮</g-button>
+    <g-button icon="setting" icon-position="right">按钮</g-button>
 </div>
+<script src="//at.alicdn.com/t/font_3028659_al0wnpx3m7.js"></script>
 </body>
 </html>
